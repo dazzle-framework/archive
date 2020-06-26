@@ -1,0 +1,38 @@
+{
+    "name": "dazzlesoftware/archive",
+    "type": "library",
+    "description": "Dazzle Framework Archive Package",
+    "keywords": ["dazzle", "framework", "archive"],
+    "homepage": "https://github.com/dazzle-framework/archive",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": "^7.3.0",
+        "dazzlesoftware/filesystem": "^1.0"
+    },
+    "require-dev": {
+        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "dazzlesoftware/test": "^1.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "suggest": {
+        "ext-bz2": "To extract bzip2 compressed packages",
+        "ext-zip": "To extract zip compressed packages",
+        "ext-zlib": "To extract gzip or zip compressed packages"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dazzle\\Archive\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dazzle\\Archive\\UnitTests": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-2.0-dev": "2.0-dev"
+        }
+    }
+}
